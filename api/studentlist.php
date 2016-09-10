@@ -1,9 +1,5 @@
 <?php
-// print_r($_POST);
-$con = mysql_connect('localhost','root', '') or die();
-// var_dump($con);
-$db	 = mysql_select_db('srvmedia') or die();
-// var_dump($db);
+include('cfg.php');
 $student_res = mysql_query("select * from student") or die();
 $student_list = array( );
 while ($row = mysql_fetch_assoc($student_res)) {

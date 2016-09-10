@@ -49,9 +49,9 @@
 		    </thead>		           
             <tr ng-repeat="astudent in studentlist | orderBy:propertyName:reverse | filter:search:strict" >
 			    <th>{{astudent.id}}</th>
-			    <td ng-class="">{{astudent.name}}</td>
+			    <td>{{astudent.name}}</td>
 			    <td>{{astudent.birthdate|date:'dd/MM/yyyy'}}</td>
-			    <td ng-class="{failed: astudent.percentage}">{{astudent.percentage }}</td>
+			    <td>{{astudent.percentage }}</td>
             	<td class="text-center">
             		<a href="" data-toggle="modal" data-target="#myModal" ng-click="askDeleteStudent(astudent)" class="btn btn-danger btn-xs">Delete<b>X</b></a>
         		</td>
